@@ -1,5 +1,3 @@
-package Test;
-
 /**
  * Worker class
  */
