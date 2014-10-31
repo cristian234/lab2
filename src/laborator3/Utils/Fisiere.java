@@ -1,4 +1,4 @@
-package laborator3.utils;
+package laborator3.Utils;
 
 import java.time.Instant;
 import java.util.Date;
@@ -15,7 +15,7 @@ public class Fisiere extends Sistem_fisiere {
     public String date=null; // fisierele ordinare contin date in interior
 
     //Implementare de constructori
-    Fisiere(String nm, String data, String ext)
+    public Fisiere(String nm, String data, String ext)
     {
         nume=nm;
         date=data;
@@ -23,7 +23,7 @@ public class Fisiere extends Sistem_fisiere {
         data_creare= Date.from(Instant.now());
         extensie=ext;
     }
-    Fisiere(String num,String ext)
+    public Fisiere(String num,String ext)
     {
         nume=num;
         dimensiune=0;

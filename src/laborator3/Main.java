@@ -1,7 +1,7 @@
 package laborator3;
 
-import laborator3.utils.Directoare;
-import laborator3.utils.Fisiere;
+import laborator3.Utils.Directoare;
+import laborator3.Utils.Fisiere;
 //import laborator3.utils.Sistem_fisiere;
 
 /**

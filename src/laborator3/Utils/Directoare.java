@@ -1,4 +1,4 @@
-package laborator3.utils;
+package laborator3.Utils;
 
 import java.time.Instant;
 import java.util.Date;
