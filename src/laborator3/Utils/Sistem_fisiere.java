@@ -1,25 +1,24 @@
-package laborator3.Utils;
+package laborator3.utils;
 
 import java.util.Date;
 
 /**
- * Created by Cristian on 10/31/2014.
+ * Sistem de fisiere:
+ * - Directoare;
+ * - Fisiere Ordinare;
  */
 public abstract class Sistem_fisiere {
-    public String nume_fisier;
+    public String nume;
     public double dimensiune;
     public Date data_creare;
-    String tip;
+    //String tip;
 
     abstract public String archive();
     abstract void print_header();
 
-
-    public void setTip(String tip) {
-        this.tip = tip;
+    public void update_dimension(double new_dim)
+    {
+        dimensiune+=new_dim;
     }
 
-    public String getTip() {
-        return tip;
-    }
 }
