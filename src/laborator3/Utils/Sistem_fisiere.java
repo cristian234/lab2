@@ -14,11 +14,11 @@ public abstract class Sistem_fisiere {
     //String tip;
 
     abstract public String archive();
+
     abstract void print_header();
 
-    public void update_dimension(double new_dim)
-    {
-        dimensiune+=new_dim;
+    public void update_dimension(double new_dim) {
+        dimensiune += new_dim;
     }
 
 }
