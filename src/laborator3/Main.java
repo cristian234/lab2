@@ -8,13 +8,13 @@ import laborator3.Utils.Fisiere;
  * Clasa main pentru gestionarea Sistemului de fisiere
  */
 public class Main {
-    public void main(String [] args)
+    public static void main(String [] args)
     {
         Directoare Dir1=new Directoare("root");
         Dir1.inserare_fisier(200);
 
         Fisiere fis1=new Fisiere("primul_fisier","Mata are cratima","txt");
-
+        fis1.print_header();
 
     }
 
