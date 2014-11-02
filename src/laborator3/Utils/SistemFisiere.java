@@ -7,17 +7,17 @@ import java.util.Date;
  * - Directoare;
  * - Fisiere Ordinare;
  */
-public abstract class Sistem_fisiere {
+public abstract class SistemFisiere {
     public String nume;
     public double dimensiune;
     public Date data_creare;
     //String tip;
 
-    abstract public String archive();
+    abstract public String Archive();
 
-    abstract void print_header();
+    abstract void printHeader();
 
-    public void update_dimension(double new_dim) {
+    public void updateDimension(double new_dim) {
         dimensiune += new_dim;
     }
 
