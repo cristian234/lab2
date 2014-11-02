@@ -1,8 +1,8 @@
 package laborator3;
 
-import laborator3.Utils.Directoare;
-import laborator3.Utils.ExceptiiFisiere;
-import laborator3.Utils.Fisiere;
+import laborator3.utils.Directoare;
+import laborator3.utils.ExceptiiFisiere;
+import laborator3.utils.Fisiere;
 
 /**
  * Clasa main pentru gestionarea Sistemului de fisiere
