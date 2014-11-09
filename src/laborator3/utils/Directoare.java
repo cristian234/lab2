@@ -8,7 +8,7 @@ import java.util.Date;
  */
 public class Directoare extends SistemFisiere {
 
-    public int numar_fisiere = 0;
+    private int numar_fisiere = 0;
 
     public Directoare(String nm) {
         nume = nm;
