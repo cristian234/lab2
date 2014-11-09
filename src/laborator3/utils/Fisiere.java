@@ -8,23 +8,24 @@ import java.util.Date;
  */
 public class Fisiere extends SistemFisiere implements FisiereText {
 
-    public String extensie = null; // fiecare fisier in parte are extensie
-    public String date = null; // fisierele ordinare contin date in interior
+    public String extensieFisier = null; // fiecare fisier in parte are extensie
+    public String dateFisier = null; // fisierele ordinare contin date in interior
+    String numeDirector = "root";
 
     //Implementare de constructori
     public Fisiere(String nm, String data, String ext) {
         nume = nm;
-        date = data;
+        dateFisier = data;
         dimensiune = 0;
-        DataCreare = Date.from(Instant.now());
-        extensie = ext;
+        dataCreare = Date.from(Instant.now());
+        extensieFisier = ext;
     }
 
     public Fisiere(String num, String ext) {
         nume = num;
         dimensiune = 0;
-        DataCreare = Date.from(Instant.now());
-        extensie = ext;
+        dataCreare = Date.from(Instant.now());
+        extensieFisier = ext;
     }
 
     //Declarare de metode abstracte
@@ -35,10 +36,10 @@ public class Fisiere extends SistemFisiere implements FisiereText {
 
         archive_string = this.nume;
         archive_string += this.dimensiune;
-        archive_string += this.DataCreare.toString();
-        archive_string += this.extensie;
-        archive_string += this.date;
-
+        archive_string += this.dataCreare.toString();
+        archive_string += this.extensieFisier;
+        archive_string += this.dateFisier;
+        archive_string += this.numeDirector;
         return archive_string;
     }
 
@@ -48,8 +49,8 @@ public class Fisiere extends SistemFisiere implements FisiereText {
 
     @Override
     public void AfisareDate() throws ExceptiiFisiere {
-        if (extensie == "txt" || extensie == "doc" || extensie == "nfo") {
-            System.out.println(date);
+        if (extensieFisier == "txt" || extensieFisier == "doc" || extensieFisier == "nfo") {
+            System.out.println(dateFisier);
         } else {
             throw new ExceptiiFisiere("Fisier cu alta extensie");
         }
@@ -57,7 +58,11 @@ public class Fisiere extends SistemFisiere implements FisiereText {
 
     @Override
     public void ModificareDate(String new_data) {
-        this.date = new_data;
+        this.dateFisier = new_data;
+    }
+
+    public void modificareDirector(Directoare dirNou) {
+        this.numeDirector = dirNou.nume;
     }
 
 }

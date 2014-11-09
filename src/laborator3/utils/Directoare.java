@@ -8,12 +8,12 @@ import java.util.Date;
  */
 public class Directoare extends SistemFisiere {
 
-    private int numar_fisiere = 0;
+    private int numarFisiere = 0;
 
     public Directoare(String nm) {
         nume = nm;
         dimensiune = 0;
-        DataCreare = Date.from(Instant.now());
+        dataCreare = Date.from(Instant.now());
     }
 
     @Override
@@ -21,8 +21,8 @@ public class Directoare extends SistemFisiere {
         String archive_string = null;
         archive_string = this.nume;
         archive_string += this.dimensiune;
-        archive_string += this.DataCreare.toString();
-        archive_string += this.numar_fisiere;
+        archive_string += this.dataCreare.toString();
+        archive_string += this.numarFisiere;
         return archive_string;
     }
 
@@ -31,7 +31,7 @@ public class Directoare extends SistemFisiere {
     }
 
     public void setNumarFisiere() {
-        numar_fisiere += 1;
+        numarFisiere += 1;
     }
 
     public void inserareFisier(double dim) {

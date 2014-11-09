@@ -10,10 +10,10 @@ import java.util.Date;
 public abstract class SistemFisiere {
     public String nume;
     public double dimensiune;
-    public Date DataCreare;
+    public Date dataCreare;
     //String tip;
 
-    abstract public String Archive();
+    abstract String Archive();
 
     abstract void printHeader();
 
